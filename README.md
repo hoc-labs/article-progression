@@ -1,4 +1,4 @@
-# Article Progression - Parts 1-3
+# Article Progression - Parts 1-4
 
 ## Part 1 - Basic HTML Elements
 
@@ -235,5 +235,11 @@ Here's a screen capture of what we want it to look like.
 * add a bottom border the heading
 * add a bottom border to the list of links
 
+## Part 4 - Article Comments
+Add a comments section to the bottom of the article.
+* use flex to position the buttons
+* use flex to position the avatar to the left of the comment details for each user.
 
+
+![](https://raw.githubusercontent.com/hoc-labs/images/main/article-progression-part4.png)
 
