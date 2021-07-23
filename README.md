@@ -4,7 +4,7 @@
 
 You task for this assignment is to use your knowledge of basic HTML elements to build a web page for an article. Feel free to use whatever topic you want for your article.
 
-In general, you want to start off with an rough design/schematic for your page before you start. A **wireframe** is the term used for the mockup created to visualize the initial rendering of the page. A wireframe is a rough visual representation of the page. Here is the wireframe for the page you are going to create for this assignment.
+Here is a **wireframe** for the page you are going to create for this assignment. A wireframe is the term used for the mockup created to visualize the initial rendering of the page. It is intentionally minimalist and avoids colors and styling. It is only meant to show the overall placement of items, rather than design.
 
 ![](https://raw.githubusercontent.com/hoc-labs/images/main/article-1.png)
 
@@ -14,6 +14,8 @@ Create your new HTML page in your project folder. Name it index.html. Once you h
 
 ### Lorem Ipsum Text
 
+In this assignment, there are several places where you will need to use some Lorem Ipsum text.
+
 A technique front-end developers use when they need some text to display in prototypes (non-production code), is to use sample text supplied by sites like [https://loremipsum.io/](https://loremipsum.io/).
 
 
@@ -21,8 +23,7 @@ You can specify whether you want paragraphs or sentences, and it will generate s
 
 Not only does it prevent you from having to come up with your own narrative, but it also keeps the people reviewing your web page from getting distracted by the text, and instead focus on the overall design review.
 
-In this assignment, there are several places where you will need to use some Lorem Ipsum text.
-
+![](https://raw.githubusercontent.com/hoc-labs/images/main/article-progression-sections.png)
 ### Title Section
 
 This is the title for your entire page. Use an `h1` element.
@@ -55,13 +56,13 @@ Before the three sections, there is a heading, followed by a list of three items
 
 ### Internal Page Links
 
-Most of the time the value of the href attribute on the `<a> ` element is the URL for an external page with in the website, or a page within another website (usually launches a new tab for this type).
+Most of the time the value of the `href` attribute on the `<a> ` element is the URL for an external page with in the website, or a page within another website (usually launches a new tab for this type).
 
-But it is also possible to set the href attribute to the id of another element in the same page. Click on this type of hyper-link will cause the target element to scroll into view. This is particularly useful for very long articles where there is an index to sections at the top and clicking on a link in the index scrolls the page down to the appropriate section.
+But it is also possible to set the `href` attribute to the `id` of another element in the same page. Clickoing on this type of hyper-link will cause the target element to scroll into view. This is particularly useful for very long articles where there is an index to sections at the top and clicking on a link in the index scrolls the page down to the appropriate section.
 
 For our article we are going to use this technique to link the items in the TOC list to their associated sections further down in the article.
 
-In order to do this, you will need to give each section heading (the `<h3>` element) an id attribute with a unique value. Then, in the `<a>` element linking to the section heading, you will specify that **\#id** as the value for the href attribute.
+In order to do this, you will need to give each section heading (the `<h3>` element) an `id` attribute with a unique value. Then, in the `<a>` element linking to the section heading, you will specify that **\#id** as the value for the href attribute.
 
 For example, here is how we could create a hyper-link to the section heading further down the page.
 
@@ -98,7 +99,7 @@ Remember to get in the habit of using **git ACP** (add, commit, push) to save sn
 
 When you are done, do it one last time to make sure your final work is on GitHub for your instructor to review.
 
-<br/><br/>
+<br/>
 
 ## Part 2 - Semantic HTML Elements
 You task for this assignment is to improve your topic article to use semantic elements. 
@@ -126,12 +127,12 @@ Here is an example, of wrapping the elements for Section 1, which is for the Pin
 </section>
 ```
 
-You should the following areas of your HTML wrapped in  `<section>` elements:
+You should have the following areas of your HTML wrapped in  `<section>` elements:
 
 * Article Title Section
 * Video Section
 * Article TOC Section
-* Each Article Topic Section
+* Each Article Detail Section
 
 ## Title Section
 
@@ -169,7 +170,7 @@ You task for this assignment is to improve your topic article in two ways:
 ### Article Title Section
 
 * Add a sub-title under the article title. Use a `<p>` element, with some lorem ipsum text. Place the sub-title immediately following the article title `<h1>`.
-* Add a profile image for the author. Add an `<img>` element following the sub-title. Use the photo.jpg image in the images folder.
+* Add a profile image for the author. Add an `<img>` element following the sub-title. Use the photo.jpg image in the images folder. 
 * Add a `<time>JANUARY/FEBRUARY 2018</time>` element following the `<address>` element.
 
 It should look something like this after the elements have been added.
@@ -215,16 +216,18 @@ Here's a screen capture of what the title section should look like.
 * Change the article sub-title font-size to 24px.
 
 **Adjust Margin between Title and Sub-title elements**
-Before styling, there is too much space between the title (`<h1>`) and the sub-title (`<p>`). Because both have a default margin, and margins collapse, setting one to zero will not remove the space. You will need to set both the bottom margin of the title and the top margin of the sub-title to zero to completely remove the margin, and the play with values for one or the other to get the desired space.
+Before styling, there is too much space between the title (`<h1>`) and the sub-title (`<p>`). Because both have a default margin, and [margins collapse](https://chnn-anne.gitbook.io/html-css/basic-css/box-model-box-sizing), setting one to zero will not remove the space. You will need to set both the bottom margin of the title and the top margin of the sub-title to zero to completely remove the margin, and then play with the values for one or the other to get the desired space.
 
 **Style - Author Section**
 We want to get the author's profile image, name, and article date all to show up on a single line and also adjust the text color and font weight.
+
+![](https://raw.githubusercontent.com/hoc-labs/images/main/article-progression-author.png)
 
 * the address element is a block element by default. change it to be inline so that it does not return to the next line.
 * set the text color for the address to be a shade of red.
 * set the font size to be 11px for both the address and the time elements
 * set the font weight to be 600 for both the address and the time elements
-* adjust the avatar styles to make it center vertically (vertical-align:middle) and add a margin on the right of 5px.
+* adjust the profile image styles to make it center vertically (vertical-align:middle) and add a margin on the right of 5px.
 
 ### Styles - Article TOC
 Here's a screen capture of what we want it to look like.
@@ -235,10 +238,11 @@ Here's a screen capture of what we want it to look like.
 * add a bottom border the heading
 * add a bottom border to the list of links
 
-## Part 4 - Article Comments
+## Part 4 - Article Comments (Extra Challenge)
 Add a comments section to the bottom of the article.
-* use flex to position the buttons
-* use flex to position the avatar to the left of the comment details for each user.
+* use a `<textarea>` for the comment input area.
+* use `text-align:right` to position the buttons
+* use `display:flex` to position the avatar image to the left of the rest of the comment details for each user.
 
 
 ![](https://raw.githubusercontent.com/hoc-labs/images/main/article-progression-part4.png)
