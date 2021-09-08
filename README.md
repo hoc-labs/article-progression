@@ -200,8 +200,8 @@ Once you have changed the default font, you should be able to verify the change 
 **Add topic section spacing**
 Add some space between each of the jellyfish topic sections. You should use margins for space between element boxes and padding for space within an element's box.
 
-<br/>
-###Styles - Article Title Section
+
+### Styles - Article Title Section
 Here's a screen capture of what the title section should look like.
 
 ![](https://raw.githubusercontent.com/hoc-labs/images/main/article-progression-title.png)
